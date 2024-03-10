@@ -13,7 +13,7 @@ services:
     environment:
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
       - AIRFLOW__CORE__FERNET_KEY=46BKJoQYlPPOofyDDAmhZ37Si56s9PJVMBlAZJABtig=
     ports:
       - "8080:8080"
@@ -21,7 +21,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./dags:/usr/local/airflow/dags
+      - /c/Users/klaud/iCloudDrive/Work Docs/Discere Digital/Czar Klaudius/BopsBakes/basic-airflow-main/dags:/opt/airflow/dags
   airflow-scheduler:
     image: apache/airflow:2.8.2
     environment:
@@ -33,4 +33,4 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./dags:/usr/local/airflow/dags
+      - /c/Users/klaud/iCloudDrive/Work Docs/Discere Digital/Czar Klaudius/BopsBakes/basic-airflow-main/dags:/opt/airflow/dags

@@ -11,7 +11,7 @@ default_arg = {
 }
 
 with DAG(
-    dag_id='dag_with_postgres_operaor_v1.0'
+    dag_id='dag_with_postgres_operator_v1.0'
     default_args=default_args,
     start_date=datetime(2021, 12, 19),
     schedule_interval='0 0 * * *'
@@ -25,5 +25,4 @@ with DAG(
             dag_id character varying,
             primary key (dt, dag_id)
         ''',
-    )   
-    task1
+    )  task1
