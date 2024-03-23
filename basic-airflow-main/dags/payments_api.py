@@ -15,6 +15,7 @@ client = Client(
     environment=config.square_environment,
 )
 
+
 # Example function to list payments
 # def list_payments():
 #     result = client.payments.list_payments(
