@@ -1,2 +1,3 @@
 basic-airflow-main/dags/config.py
+basic-airflow-main/jupyterTest/config.py
 basic-airflow-main/dags/__pycache__/config.cpython-311.pyc
