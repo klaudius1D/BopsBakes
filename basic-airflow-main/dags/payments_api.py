@@ -19,7 +19,7 @@ def client_call():
     return client
 
 
-# Example function to list payments
+# Function to list payments
 def list_payments():
     client = client_call()
     result = client.payments.list_payments(
@@ -34,6 +34,6 @@ def list_payments():
         print(result.errors)
 
 
-# Calling the function
+# main
 if __name__ == "__main__":
     list_payments()
