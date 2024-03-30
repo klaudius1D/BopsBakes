@@ -7,6 +7,7 @@ CREATE TABLE test_payments (
     user varchar (2)
 )
  
+/*Table from API call*/ 
 id                                                        object 
 created_at                                                object 
 updated_at                                                object 
